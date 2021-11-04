@@ -1,0 +1,24 @@
+<html>
+    <body>
+
+        {%include "superior/barra.html" %}
+    <h2 style= "color: red">
+    PRIMERA PLANTILLA
+    </h2>
+    <p>
+        El nombre del profesor es: {{nombre_persona}} {{apellido}}
+    </p>
+    <p>
+        La hora y fecha es: {{fecha.day}} /  {{fecha.month}} /  {{fecha.year}}
+    </p>
+    <p> <strong>Temas del curso: </strong>  </p>
+    <p> 
+        {% for eltema in temas%}
+
+            {{eltema}}
+
+        {% endfor%}
+    </p>
+   
+    </body>
+</html>
